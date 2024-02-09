@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "陈非池的简历"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,51 +9,49 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+联系方式
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+- 手机: 18072015070
+- 邮箱: neverbiasu67@163.com
+- 地址: 浙江省钱塘区白杨街道学源街998号浙江传媒学院
 
-Work experience
+个人介绍
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+在计算机视觉方面，担任过相关项目负责人，曾获省级立项。技术上，熟练使用 PyTorch 复现了 GAN、Transformer 等模型，并在风格转移和图像生成项目中实际应用这些技术。此外，还擅长 C++，并对 Shell 脚本及 Linux 操作系统有基本了解。作为第一作者发表的关于人脸风格转移的 EI 会议论文，展示了研究方向和努力。
+教育背景
+======
+* 2021 - 2025: 数字媒体技术, 浙江传媒学院
+  * 专业排名: 前15%
+  * 主修课程: 计算机图形学、人工智能导论、C++、人机交互技术、数据结构与算法
+  * 在校职务: 学生会部长，实验室负责人，人工智能导论课助教
+  * 实习或项目经验: stable diffusion网站搭建项目以及人脸风格迁移平台
+  * 获奖内容: 新苗立项，“优秀学生干部”
+  * 科研成果: 发表EI论文一篇
+  * 掌握的专业技能: 复现论文，编写脚本，雅思6.0
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
+技能
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Python
+* Pytorch
+* Jupyter
+* Linux
+* C++
+* Git
+* SQL
 
-Publications
+语言
 ======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+* 英语
+* 中文
+
+项目经历
 ======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+### AIGC在摄影领域的应用 (2023.1-2024.1)
+- **职责**: 数据挖掘与分析，AI模型调研与部署
+- **技术应用**: 主要利用Stable Diffusion模型
+- **成果**: 项目成功上线，完成省级立项
+
+### 交互式人脸风格迁移及审美评价平台 (2023.8-至今)
+- **职责**: 项目负责人
+- **技术亮点**: 应用强化学习构建审美评价模型，使用Python、FastAPI、Docker、MySQL和React
+- **成就**: 发表EI会议论文，展示项目的科研价值

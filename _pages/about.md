@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "欢迎来到陈非池的个人网站"
-excerpt: "关于我"
+# excerpt: "关于我"
 author_profile: true
 redirect_from: 
   - /about/

@@ -2,10 +2,10 @@
 permalink: /about-en/
 title: "Welcome to Chen Feichi's Personal Website"
 excerpt: "About Me"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+# author_profile: true
+# redirect_from: 
+#   - /about/
+#   - /about.html
 ---
 [Chinese Version](./about.md)
 

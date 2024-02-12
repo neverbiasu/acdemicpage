@@ -10,10 +10,10 @@ locale                   : "Leeds, UK"
 title                    : "Faych's Blog"
 title_separator          : "-"
 name                     : &name "Faych Chan(neverbiasu)"
-description              : &description "coding, writing and thinking;\\ 
-machine learning, deep learning and computer vision;\\
-python, c++ and linux;\\
-basketball, music and games;\\
+description              : &description "coding, writing and thinking;
+machine learning, deep learning and computer vision;
+python, c++ and linux;
+basketball, music and games;
 open source, open mind and open heart."
 url                      : https://neverbiasu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -85,11 +85,11 @@ analytics:
 # Site Author
 author:
   name             : "neverbiasu"
-  avatar           : "profile.png"
-  bio              : "coding, writing and thinking;\\ 
-machine learning, deep learning and computer vision;\\
-python, c++ and linux;\\
-basketball, music and games;\\
+  avatar           : "Waddle_Dee.png"
+  bio              : "coding, writing and thinking;
+machine learning, deep learning and computer vision;
+python, c++ and linux;
+basketball, music and games;
 open source, open mind and open heart."
   location         : "Leeds, UK"
   employer         :

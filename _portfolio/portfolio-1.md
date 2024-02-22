@@ -1,6 +1,6 @@
 ---
 title: "Portfolio item number 1"
-excerpt: "分布式数据库TDSQL(MySQL版)【腾讯云开发者认证】<br/><img src='/images/certi1.jpg'>"
+excerpt: "分布式数据库TDSQL(MySQL版)【腾讯云开发者认证】<br/><img src='/images/certis/certi1.jpg'>"
 collection: portfolio
 ---
 

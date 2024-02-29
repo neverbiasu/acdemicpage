@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<link rel="icon" href="images/icon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 [英文版本](./about_en.md) 
 
 ### 个人介绍 

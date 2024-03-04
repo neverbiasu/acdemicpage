@@ -35,6 +35,7 @@ author_profile: true
 ### Future Plans
 ##### I plan to pursue an MSc in the UK in the fall of 2025🎓. Meanwhile, I'm also looking for internship opportunities for the next semester💥, hoping to make advancements in the field of artificial intelligence and machine learning.
 
+#### my cv:[cv_en](cv_en.md)
 ---
 
 ### Contact Information

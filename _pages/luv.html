@@ -40,8 +40,10 @@ author_profile: false
         }
         #start-button {
             margin-top: 20px;
+            margin: auto;
             padding: 10px 20px;
             font-size: 1.2em;
+            size: 40px;
         }
         .timeline-page, .final-page {
             background-color: #f8f8f8;
@@ -77,25 +79,36 @@ author_profile: false
 <body>
     <!-- 欢迎页面 -->
     <div id="welcome" class="welcome-page page" style="display: flex;">
-        <h1>欢迎来到浪漫表白网站</h1>
-        <button id="start-button">开始创建表白</button>
+        <h1>Hello, 一帆</h1>
+        <button class="start-button">点这里打开</button>
     </div>
 
     <!-- 时间轴展示页面 -->
     <div id="timeline" class="timeline-page page">
-        <h2>我们的浪漫时刻</h2>
+        <h2>一些被记住的时刻</h2>
         <div class="timeline">
             <div class="event">
-                <h3>初次见面</h3>
-                <p>我们在咖啡馆相遇...</p>
+                <h3>初次约会</h3>
+                <p>我们约在了一个日料店，
+                    真的很巧，
+                    我们都很爱吃日料。
+                    吃完后我们去了Maze酒吧续摊，
+                    回来的路上借着酒劲，
+                    我向你表达了好感。
+                </p>
             </div>
             <div class="event">
-                <h3>第一次约会</h3>
+                <h3>第一次</h3>
                 <p>那天我们去了公园...</p>
             </div>
             <div class="event">
-                <h3>第一次旅行</h3>
-                <p>我们一起去了海边...</p>
+                <h3>第一次住宾馆</h3>
+                <p>我们去了西湖边上的一家民宿，
+                    晚上还能看到有人放烟花，
+                    当天是元宵节，
+                    我们一起吃了汤圆，
+                    很安逸的一晚
+                </p>
             </div>
         </div>
     </div>
@@ -103,7 +116,7 @@ author_profile: false
     <!-- 最终表白页面 -->
     <div id="final" class="final-page page">
         <h2>表白时间</h2>
-        <div class="final-message">亲爱的，我爱你！</div>
+        <div class="final-message">love u</div>
     </div>
 
     <script>

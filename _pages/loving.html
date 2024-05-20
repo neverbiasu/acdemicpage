@@ -1,0 +1,52 @@
+---
+layout: archive
+title: "LOVE U 3000"
+permalink: /loving/
+author_profile: false
+---
+
+{% include base_path %}
+
+
+{% for post in site.luv %}
+  {% include archive-single.html %}
+{% endfor %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Page</title>
+    <style>
+        .event {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 80%;
+            background-color: white;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease-in-out;
+        }
+        .event.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .love-message {
+            margin-top: 50px;
+            font-size: 1.5em;
+            color: #ff4081;
+        }
+    </style>
+</head>
+<body>
+    <!-- 最终表白页面 -->
+    <div id="love-message" class="love page">
+        <h2>表白时间</h2>
+        <div class="final-message">love u</div>
+    </div>
+    <!-- Include your JavaScript here -->
+</body>
+</html>

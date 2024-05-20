@@ -1,0 +1,300 @@
+<section id="timeline"></section>
+        <style></style>layout: archive
+title: "our times"
+permalink: /time/
+author_profile: false
+---
+
+{% include base_path %}
+
+
+{% for post in site.time %}
+    {% include archive-single.html %}
+{% endfor %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Timeline</title>
+    <style>
+        /* SCSS converted to CSS */
+        @media (min-width: 1000px) {
+            .arrow {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 0;
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;
+            }
+            .marker {
+                position: absolute;
+                content: "";
+                width: 9px;
+                height: 9px;
+                background-color: #bdbdbd;
+                border-radius: 9px;
+                box-shadow: 0px 0px 2px 8px #f7f7f7;
+            }
+        }
+        @media (min-width: 480px) {
+            .demo-card {
+                max-width: 60%;
+                box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+            }
+        }
+        @media (min-width: 720px) {
+            .demo-card {
+                max-width: 40%;
+            }
+        }
+        @media (min-width: 1000px) {
+            .demo-card {
+                max-width: 450px;
+                height: 400px;
+                margin: 90px;
+                margin-top: 45px;
+                margin-bottom: 45px;
+            }
+            .demo-card:nth-child(odd) {
+                margin-right: 45px;
+            }
+            .demo-card:nth-child(even) {
+                margin-left: 45px;
+            }
+            .demo-card:nth-child(2) {
+                margin-top: 180px;
+            }
+        }
+        .demo-card-wrapper {
+            position: relative;
+            margin: auto;
+            @media (min-width: 1000px) {
+                display: flex;
+                flex-flow: column wrap;
+                width: calc(450px * 2 + 90px * 3);
+                height: calc(ceil(5 / 2) * (400px + 90px) + 180px);
+                margin: 0 auto;
+            }
+            &::after {
+                z-index: 1;
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                border-left: 1px solid #bdbdbd;
+            }
+        }
+        .demo-card {
+            position: relative;
+            display: block;
+            margin: 10px auto 80px;
+            max-width: 94%;
+            z-index: 2;
+            background-color: #46b8e9;
+            .head::after {
+                border-color: #46b8e9;
+            }
+            .head {
+                position: relative;
+                display: flex;
+                align-items: center;
+                color: #fff;
+                font-weight: 400;
+                .number-box {
+                    display: inline;
+                    float: left;
+                    margin: 15px;
+                    padding: 10px;
+                    font-size: 35px;
+                    line-height: 35px;
+                    font-weight: 600;
+                    background: rgba(0, 0, 0, 0.17);
+                }
+                h2 {
+                    text-transform: uppercase;
+                    font-size: 1.3rem;
+                    font-weight: inherit;
+                    letter-spacing: 2px;
+                    margin: 0;
+                    padding-bottom: 6px;
+                    line-height: 1rem;
+                    @media (min-width: 480px) {
+                        font-size: 165%;
+                        line-height: 1.2rem;
+                    }
+                    span {
+                        display: block;
+                        font-size: 0.6rem;
+                        @media (min-width: 480px) {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+            .body {
+                background: #fff;
+                border: 1px solid rgba(191, 191, 191, 0.4);
+                border-top: 0;
+                padding: 15px;
+                @media (min-width: 1000px) {
+                    height: calc(400px - (35px + 50px));
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 18px;
+                    margin-bottom: 15px;
+                }
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            &--step1 {
+                background-color: #46b8e9;
+                .head::after {
+                    border-color: #46b8e9;
+                }
+            }
+            &--step2 {
+                background-color: #3ee9d1;
+                .head::after {
+                    border-color: #3ee9d1;
+                }
+            }
+            &--step3 {
+                background-color: #ce43eb;
+                .head::after {
+                    border-color: #ce43eb;
+                }
+            }
+            &--step4 {
+                background-color: #4d92eb;
+                .head::after {
+                    border-color: #4d92eb;
+                }
+            }
+            &--step5 {
+                background-color: #46b8e9;
+                .head::after {
+                    border-color: #46b8e9;
+                }
+            }
+        }
+        body {
+            font-family: Roboto;
+        }
+        #timeline {
+            padding: 100px 0;
+            background: #f7f7f7;
+            border-top: 1px solid rgba(191, 191, 191, 0.4);
+            border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+            h1 {
+                text-align: center;
+                font-size: 3rem;
+                font-weight: 200;
+                margin-bottom: 20px;
+            }
+            p.leader {
+                text-align: center;
+                max-width: 90%;
+                margin: auto;
+                margin-bottom: 45px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="timeline">
+        <h1>A Flexbox Timeline</h1>
+        <p class="leader">All cards must be the same height and width for space calculations on large screens.</p>
+        <div class="demo-card-wrapper">
+            <div class="demo-card demo-card--step1">
+                <div class="head">
+                    <div class="number-box">
+                        <span>初次约会</span>
+                    </div>
+                    <h2><span class="small">2023年11月11日</span> Technology</h2>
+                </div>
+                <div class="body">
+                        <p>我们约在了一个日料店，
+                                真的很巧，
+                                我们都很爱吃日料。
+                                吃完后我们去了Maze酒吧续摊，
+                                回来的路上借着酒劲，
+                                我向你表达了好感。
+                        </p>
+                        <img src="../images/p1.jpg" alt="Graphic">
+                </div>
+            </div>
+
+            <div class="demo-card demo-card--step2">
+                <div class="head">
+                    <div class="number-box">
+                        <span>第一次吃海鲜酒店🍽️</span>
+                    </div>
+                    <h2><span class="small">2023年11月17日</span> Confidence</h2>
+                </div>
+                <div class="body">
+                        <p>你请我吃海鲜，因为我数字图像处理的期中考得不错！
+                                点菜的时候我觉得石斑鱼有点贵，你大方地说“没关系，我请！”，我好感动
+                                那晚的鱼汤，我现在依稀还记得，醇厚的鱼香里带点奶味
+                                再晚些的时候，我们一起躺在消防公园的池塘边，我亲了你
+                        </p>
+                        <img src="../images/p2.jpeg" alt="Graphic">
+                </div>
+            </div>
+
+            <div class="demo-card demo-card--step3">
+                <div class="head">
+                    <div class="number-box">
+                        <span>第一次野餐</span>
+                    </div>
+                    <h2><span class="small">Subtitle</span> Adaptation</h2>
+                </div>
+                <div class="body">
+                        <p>去白天的消防公园野餐，逛了好久，逛公园聊天真的很开心
+                                后面去看了蜡笔小新，     
+                                看完你请我喝了Starbucks
+                        </p>          
+                        <img src="http://placehold.it/1000x500" alt="Graphic">
+                </div>
+            </div>
+
+            <div class="demo-card demo-card--step4">
+                <div class="head">
+                    <div class="number-box">
+                        <span>04</span>
+                    </div>
+                    <h2><span class="small">Subtitle</span> Consistency</h2>
+                </div>
+                <div class="body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+                    <img src="http://placehold.it/1000x500" alt="Graphic">
+                </div>
+            </div>
+
+            <div class="demo-card demo-card--step5">
+                <div class="head">
+                    <div class="number-box">
+                        <span>05</span>
+                    </div>
+                    <h2><span class="small">Subtitle</span> Conversion</h2>
+                </div>
+                <div class="body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+                    <img src="http://placehold.it/1000x500" alt="Graphic">
+                </div>
+            </div>
+        </div>
+        <script>
+            document.getElementById("close-envelope").addEventListener("click", function() {
+                window.location.href = "/loving";
+            });
+        </script>
+    </section>
+</body>
+</html>

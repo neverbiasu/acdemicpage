@@ -17,6 +17,55 @@ author_profile: false
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .page {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        .welcome-page {
+            background: url('background.jpg') no-repeat center center/cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #start-button {
+            margin-top: 20px;
+            margin: auto;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 欢迎页面 -->
+    <div id="welcome" class="welcome-page page">
+        <h1>Hello, 一帆</h1>
+        <button class="start-button" id="start-button">点这里打开</button>
+    </div>
+    <script>
+        document.getElementById('start-button').addEventListener('click', function() {
+            window.location.href = '/time';
+        });
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>情人节表白网站</title>
     <style>
         body {
@@ -84,34 +133,7 @@ author_profile: false
     </div>
 
     <!-- 时间轴展示页面 -->
-    <div id="timeline" class="timeline-page page">
-        <h2>一些被记住的时刻</h2>
-        <div class="timeline">
-            <div class="event">
-                <h3>初次约会</h3>
-                <p>我们约在了一个日料店，
-                    真的很巧，
-                    我们都很爱吃日料。
-                    吃完后我们去了Maze酒吧续摊，
-                    回来的路上借着酒劲，
-                    我向你表达了好感。
-                </p>
-            </div>
-            <div class="event">
-                <h3>第一次</h3>
-                <p>那天我们去了公园...</p>
-            </div>
-            <div class="event">
-                <h3>第一次住宾馆</h3>
-                <p>我们去了西湖边上的一家民宿，
-                    晚上还能看到有人放烟花，
-                    当天是元宵节，
-                    我们一起吃了汤圆，
-                    很安逸的一晚
-                </p>
-            </div>
-        </div>
-    </div>
+    
 
     <!-- 最终表白页面 -->
     <div id="final" class="final-page page">
